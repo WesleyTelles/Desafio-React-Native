@@ -12,8 +12,9 @@ export default function App() {
       .then(data => {
         const sorted = data.sort((a, b) => a.name.common.localeCompare(b.name.common));
         setCountries(sorted);
-        setLoading(false);
-      });
+      })
+      .catch(() => alert('Erro ao carregar. Verifique sua conexão.'))
+      .finally(() => setLoading(false));
   }, []);
 
   const filtered = countries.filter(c =>
