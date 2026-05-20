@@ -1,0 +1,10 @@
+{
+  "expo": {
+    "name": "Países do Mundo",
+    "slug": "countries-app",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "platforms": ["ios", "android"],
+    "newArchEnabled": false
+  }
+}
