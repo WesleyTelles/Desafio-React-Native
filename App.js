@@ -50,7 +50,7 @@ export default function App() {
 }
 
 const styles = StyleSheet.create({
-  container: { flex: 1, paddingTop: 50, paddingHorizontal: 12 },
+  container: { flex: 1, paddingTop: 50, paddingHorizontal: 12, backgroundColor: '#fff' },
   input: { borderWidth: 1, borderColor: '#ccc', borderRadius: 8, padding: 10, marginBottom: 12 },
   card: { flexDirection: 'row', alignItems: 'center', padding: 12, marginBottom: 8, backgroundColor: '#f9f9f9', borderRadius: 8 },
   flag: { fontSize: 36, marginRight: 12 },
