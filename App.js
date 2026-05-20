@@ -7,7 +7,7 @@ export default function App() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch('https://restcountries.com/v3.1/all')
+    fetch('https://restcountries.com/v3.1/all?fields=name,capital,population,flag,cca3')
       .then(r => r.json())
       .then(data => {
         const sorted = data.sort((a, b) => a.name.common.localeCompare(b.name.common));
